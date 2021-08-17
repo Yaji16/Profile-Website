@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+header{
+  display: flex;
+  min-height: 12vh;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: #333333;
+}
+
+.name, .nav-links{
+  display: flex;
+}
+.name{
+  color: white;
+  flex: 1;
+}
+.logo{
+  letter-spacing: 2px;
+  margin: 0 0 0 10%;
+}
+header{
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+nav{
+
+  flex: 2;
+
+}
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+.burger{ /*hide the burger menu initially*/
+  display:none;
+}
+.burger div{ /*making a burger menu*/
+  width:25px;
+  height: 2px;
+  background-color: #F0EAF4;
+  margin: 5px;
+}
+.intro-section, .about-section, .work-section, .contact-section{
+  display: flex;
+  align-items: center;
+
+
+}
+
+.introduction, .profile-cover{
+  display: flex;
+}
+.introduction, .about-content, .work-content, .contact{
+
+  flex: 2;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+  padding: 15% 0 0 1%;
+  line-height: 150%;
+}
+.introduction h1{
+  font-size: 2.5em;
+}
+.introduction p{
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.profile-cover, .explorer-cover, .project-cover{
+
+  flex: 1;
+  height: 80vh;
+  align-items: center;
+  padding-left: 15%;
+}
+.profile{
+  height: 55vh;
+}
+.about-section, .contact-section{
+  background-color: #333333;
+  color: white;
+
+}
+
+.explore-img{
+  height: 55vh;
+}
+.work-content, .about-content{
+  padding: 10% 0 0 6%;
+}
+.project-cover, .explorer-cover{
+  padding: 6% 0 0 7%;
+}
+.project-img{
+  height:55vh;
+  padding-left: 2%;
+}
+.contact{
+  flex:1;
+  padding: 6% 0 0 6%;
+}
+.connect-img{
+  height:30vh;
+  margin-top: 4%;
+}
+.form{
+  flex:2;
+  align-content: center;
+  padding-left: 15%;
+
+}
+.form input{
+  margin-bottom: 1%;
+}
+.form p{
+  margin-bottom: 2%;
+}
+.form textarea{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  max-width: 80%;
+  max-height: 80%;
+}
+.submit-btn{
+  padding: 1%;
+}
+footer{
+  text-align: center;
+  height: 15vh;
+}
+footer p{
+  padding-top: 3%;
+}
+ @media screen and (max-width:1024px){
+   .body{
+     overflow-x: hidden;
+   }
+  .nav-links{
+    width:80%;
+  }
+  .intro-section, .about-section, .work-section, .contact-section{
+    flex-direction: column;
+  }
+  .work-content, .about-content{
+    padding: 10% 6% 0 6%;
+  }
+  .profile-cover{
+    padding: 5% 0 5% 0;
+  }
+  .explorer-cover, .project-cover{
+    padding-bottom: 5%;
+    padding-left: 0;
+  }
+  .form{
+    padding-top: 3%;
+
+  }
+}
